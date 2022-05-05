@@ -40,7 +40,7 @@ def load_data():
     below.
     """
     f = gzip.open('../data/mnist.pkl.gz', 'rb')
-    training_data, validation_data, test_data = cPickle.load(f)
+    #training_data, validation_data, test_data = cPickle.load(f)
     #Found from this site https://github.com/MichalDanielDobrzanski/DeepLearningPython/issues/15
     u = cPickle._Unpickler(f)
     u.enconding = 'latin1'
